@@ -1,0 +1,74 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "browser": true,
+    "node": true,
+    "jest": true,
+    "es6": true
+  },
+  "plugins": [
+    "redux-saga",
+    "react",
+    "jsx-a11y",
+    "flowtype"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "rules": {
+    "flowtype/define-flow-type": 1,
+    "flowtype/use-flow-type": 1,
+    "function-paren-newline": [
+      "error",
+      "consistent"
+    ],
+    "jsx-a11y/click-events-have-key-events": 0,
+    "no-multi-spaces": 0,
+    "import/no-named-as-default": 0,
+    "import/prefer-default-export": 0,
+    "no-unused-vars": [
+      "error",
+      {
+        "argsIgnorePattern": "^_.+",
+        "varsIgnorePattern": "^_.+"
+      }
+    ],
+    "no-constant-condition": [
+      "error",
+      {
+        "checkLoops": false
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "object-curly-newline": [
+      "error",
+      {
+        "ObjectExpression": {
+          "multiline": true,
+          "consistent": true
+        },
+        "ObjectPattern": {
+          "multiline": true,
+          "consistent": true
+        }
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "./internals/webpack/webpack.prod.babel.js"
+      }
+    }
+  }
+}
