@@ -2,7 +2,7 @@
 - Getting started
 - Suggested Libraries
 - Testing guide
-- Storybook
+- Styleguidist
 
 ## Getting started
 Start with the `react-boilerplate`, you can find the guide in its readme.
@@ -45,7 +45,6 @@ Its ecosystem includes:
 ...
 
 ## Documentation
-- Storybook
+- [Styleguidist](https://github.com/styleguidist/react-styleguidist)
 
 ...
-
